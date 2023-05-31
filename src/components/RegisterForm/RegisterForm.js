@@ -6,7 +6,6 @@ import {
   RegisterFormInput,
   RegisterFormLabel,
 } from './RegisterForm.styled';
-// import css from './RegisterForm.module.css';
 
 export const RegisterForm = () => {
   const dispatch = useDispatch();

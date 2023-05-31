@@ -8,7 +8,6 @@ export const LogoutButton = styled.button`
   background-color: #35c8d3;
   cursor: pointer;
   &:hover {
-    /* color: gray; */
     font-weight: 700;
   }
 `;

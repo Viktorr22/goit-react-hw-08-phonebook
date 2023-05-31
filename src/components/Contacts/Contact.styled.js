@@ -1,18 +1,14 @@
 import styled from '@emotion/styled';
 
 export const ContactMarkupList = styled.ul`
-  /* list-style: inside; */
   margin-top: 0px;
   width: 300px;
   padding-left: 0px;
-  /* padding: 20px; */
 `;
 
 export const ContactMarkupItem = styled.li`
-  /* list-style: inside; */
   display: flex;
   margin-bottom: 15px;
-  /* margin-right: auto; */
   justify-content: space-between;
 `;
 

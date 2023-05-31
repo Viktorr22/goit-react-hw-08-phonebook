@@ -1,6 +1,5 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-// import { Helmet } from 'react-helmet';
 import { Form, Section, ContactList, Filter } from 'components';
 import { fetchContacts } from 'redux/Contacts/contactsOperations';
 import {
@@ -44,14 +43,9 @@ export default function Contacts() {
         <>
           <Filter />
           <ContactList onGetFilteredContact={getFilteredContact} />
-          {/* <ContactList /> */}
         </>
       )}
       {error && <p>{error}</p>}
     </Section>
   );
 }
-
-// export function App() {
-
-// }
