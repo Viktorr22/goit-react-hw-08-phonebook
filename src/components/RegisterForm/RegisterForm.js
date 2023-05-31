@@ -13,6 +13,16 @@ export const RegisterForm = () => {
   const handleSubmit = e => {
     e.preventDefault();
     const form = e.currentTarget;
+    // if (!form.elements.name) {
+    //   alert('Введите Имя');
+    // }
+    // if (!form.elements.name) {
+    //   alert('Введите Имя');
+    // }
+    // if (!form.elements.name) {
+    //   alert('Введите Имя');
+    // }
+
     dispatch(
       register({
         name: form.elements.name.value,
@@ -27,15 +37,20 @@ export const RegisterForm = () => {
     <RegisterFormBox onSubmit={handleSubmit} autoComplete="off">
       <RegisterFormLabel>
         Username
-        <RegisterFormInput type="text" name="name" />
+        <RegisterFormInput type="text" name="name" required />
       </RegisterFormLabel>
       <RegisterFormLabel>
         Email
-        <RegisterFormInput type="email" name="email" />
+        <RegisterFormInput type="email" name="email" required />
       </RegisterFormLabel>
       <RegisterFormLabel>
         Password
-        <RegisterFormInput type="password" name="password" />
+        <RegisterFormInput
+          type="password"
+          name="password"
+          required
+          minLength="7"
+        />
       </RegisterFormLabel>
       <RegisterFormButton type="submit">Register</RegisterFormButton>
     </RegisterFormBox>
